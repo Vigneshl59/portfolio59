@@ -1,0 +1,166 @@
+.Projects{
+    width: 100%;
+    height: 70rem;
+    background-color: var(--dark-background);
+}
+.ProjectsConteiner{
+    position: absolute;
+    width: 100%;
+    margin-top: 12.5rem;
+    margin-left: -1.5rem;
+    background-color: var(--dark-background);
+}
+.ProjectsConteiner .ProjectCard{
+    width: 70%;
+    /* background-color: thistle; */
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.ProjectsConteiner .ProjectCard li{
+    display: inline-flex;
+    text-align: left;
+    list-style: none;
+    cursor: pointer;
+    padding: 1.2rem;
+}
+.ProjectsConteiner .ProjectCard li .Card img{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 18px;
+    z-index: -1;
+}
+.ProjectsConteiner .ProjectCard li div h1{
+    font-size: 1.5rem;
+}
+.ProjectsConteiner .ProjectCard li div p{
+    color: var(--default-color-text);
+    width: 13rem;
+    overflow: hidden;
+}
+.ProjectsConteiner .ProjectCard li div button{
+    width: 8rem;
+    height: 2.5rem;
+    background-color: var(--primary-button-color);
+    color: var(--default-color-text);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: .85rem;
+    cursor: pointer;
+}
+.ProjectsConteiner .ProjectCard li div button .ForwardIcon{
+    margin-top: .1rem;
+    margin-left: .5rem;
+    transition: transform 0.5s ease;
+}
+.ProjectsConteiner .ProjectCard li div button:hover {
+    color: var(--object-secundary-color);
+    border: 1px solid var(--object-secundary-color);
+}
+.ProjectsConteiner .ProjectCard li div button:hover .ForwardIcon{ 
+    transform: translateX(10px);
+    color: var(--default-color-text);
+}
+.ProjectCard .Card{
+    width: 16rem;
+    height: 16rem;
+    box-shadow: 4px 4px 20px var(--shadow-color);
+    overflow: hidden;
+    text-align: left;
+    border-radius: 18px;
+}
+.ProjectCard .Card img{
+    z-index: -1;
+}
+.ProjectCard .Card div h1{
+    margin-top: -14rem;
+    margin-left: -15rem;
+    transition: transform 1s ease-in-out;
+    z-index: 4;
+}
+.ProjectsConteiner .ProjectCard li div p{
+    margin-left: -14rem;
+    transition: transform .5s ease-in-out;
+    z-index: 4;
+}
+.ProjectsConteiner .ProjectCard li div button{
+    margin-top: 10rem;
+    margin-left: 1.5rem;
+    transition: transform .5s ease-in-out;
+    z-index: 6;
+}
+.ProjectCard  li:hover  h1{
+    color: var(--default-color-text);
+    transform: translateX(16.5rem);
+} 
+.ProjectsConteiner .ProjectCard li:hover div p{
+    transform: translateX(15.5rem);
+}
+
+.ProjectsConteiner .ProjectCard li:hover div button{
+    transform: translateY(-10rem);
+}
+
+.ProjectCard li div .OpacityEffect{
+    position: absolute;
+    width: 15.9rem;
+    height: 15.9rem;
+    margin-top: 0rem;
+    border-radius: 18px;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    transition:  background .8s ease-in-out;
+    z-index: 0;
+}
+.ProjectCard li:hover div .OpacityEffect{
+    background:var(--dark);
+    opacity: 0.8;
+}
+.ProjectsConteiner li div:hover  h1{
+    color: var(--default-color-text);
+}
+
+/* Media querys */
+@media screen and (max-width: 650px ) {
+    .ProjectsConteiner{
+        margin-top: 6rem;
+    }
+}
+@media screen and (max-width: 366px ) {
+    .ProjectsConteiner{
+        margin-left: -2rem;
+    }
+    .ProjectsConteiner .ProjectCard li .Card img{
+        width: 13rem;
+        height: 13rem;
+    }
+    .ProjectCard .Card{
+        width: 13rem;
+        height: 13rem;
+    }
+    .ProjectCard li div .OpacityEffect{
+        width: 12.9rem;
+        height: 12.9rem;
+    }
+    .ProjectCard .Card div h1{
+        margin-top: -12rem;
+        margin-left: -11rem;
+        font-size: .9rem;
+    }
+    .ProjectsConteiner .ProjectCard li div p{
+        width: 10rem;
+        font-size: .75rem;
+    }
+    .ProjectsConteiner .ProjectCard li div button{
+        margin-top: 10rem;
+        margin-left: 1.5rem;
+        transition: transform .5s ease-in-out;
+        z-index: 6;
+    }
+}
+@media screen and (max-width: 278px ) {
+    .ProjectsConteiner{
+        margin-left: -3.3rem;
+    }
+}

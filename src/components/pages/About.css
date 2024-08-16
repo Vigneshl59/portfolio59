@@ -1,0 +1,332 @@
+.AboutMe{
+    /* position: absolute; */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 3;
+    background-color: var(--dark-background);
+}
+.AboutMe .AboutPage{
+    position: absolute;
+}
+.Title{
+    position: absolute;
+    width: 100%;
+    margin-top: 4rem;
+}
+.Title h1{
+    font-size: 2.25rem;
+    font-style: bold;
+}
+.Title h2{
+    width: 100%;
+    position: absolute;
+    font-size: .85rem;
+    margin-top: -1.35rem;
+}
+
+.AboutmeConteiner{
+    /* position: absolute; */
+    text-align: center;
+    width: 100%;
+    margin-top: 45vh;
+    color: var(--default-color-text);
+}
+.AboutmeConteiner .Conteiner-1{
+    width: 50rem;
+    height: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.5rem;
+    box-shadow: 4px 4px 20px var(--shadow-color);
+    background-color: var(--conteiner-color);
+}
+.AboutmeConteiner .Conteiner-1 .AboutText{
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    font-size:large;
+    font-size: 1rem;
+    width: 24rem;
+    margin-top: 1.25rem;
+    margin-left: 23rem;
+}
+.AboutmeConteiner .AboutmeImage{
+    /* position:absolute; */
+    width: 290px;
+    height: 434px;
+    bottom: -3rem;
+    margin-top: -9.12rem;
+    margin-left: -29rem;
+}
+.AboutmeConteiner .AboutStatistic{
+    position: absolute;
+    margin-left: 22.5rem;
+    margin-top: 6rem;
+}
+.AboutmeConteiner .AboutStatistic ul li{
+    list-style: none;
+    display: inline-flex;
+    margin-right: 4.5rem;
+}
+.AboutmeConteiner .AboutStatistic ul li h1{
+    font-size: 1.5rem;
+    margin-left: .15rem;
+    color: var(--default-color-text);
+}
+.AboutmeConteiner .AboutStatistic ul li p{
+    position: absolute;
+    font-size: .85rem;
+    width: 5rem;
+    margin-top: 3rem;
+    margin-left: -1rem;
+    color: var(--default-color-text);
+}
+.AboutmeConteiner  .CVDownloader{
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: 23rem;
+    cursor: pointer;
+}
+.AboutmeConteiner  .CVDownloader a{
+    width: 9rem;
+    background-color: var(--primary-button-color);
+    box-shadow: -4px 4px 10px var(--default-shadow-color);
+    color: var(--default-color-text);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+.AboutmeConteiner  .CVDownloader a:hover{
+    color: var(--color-text-1);
+    border: 1px solid var(--object-secundary-color);
+}
+.AboutmeConteiner .CVDownloader .DownloadIcon{
+    margin-left: .75rem;
+    transition: transform .5s ease;
+}
+.AboutmeConteiner  .CVDownloader a:hover .DownloadIcon{
+    color: var(--default-color-text);
+    transform: translateY(2px);
+}
+
+/* Media querys */
+
+@media screen and (max-width: 873px) {
+    .AboutmeConteiner .Conteiner-1{
+        box-shadow: none;
+    }
+    .AboutMe{
+        background-color: var(--conteiner-color);
+        box-shadow: 4px 4px 20px var(--shadow-color);
+    }
+    .AboutMe .Title h1{
+        color: var(--default-color-text);
+    }
+    .AboutMe .Title h2{
+        color: var(--object-secundary-color);
+    }
+    .AboutmeConteiner .Conteiner-1{
+        margin-left: -20rem;
+    }
+    .AboutmeConteiner .AboutmeImage{
+        margin-top: -6.34rem;
+        margin-left: 9.5rem;
+    }
+    .AboutmeConteiner .Conteiner-1 .AboutText{
+        margin-top: -8vh;
+        margin-left: 85%;
+        text-align: center;
+    }
+    .AboutmeConteiner .AboutStatistic{
+        margin-left: 87%;
+        margin-top: 8vh;
+    }
+    .AboutmeConteiner  .CVDownloader{
+        margin-top: 40vh;;
+        margin-left: 102%;
+    }
+}
+@media screen and (max-width: 759px) {
+    .AboutmeConteiner .Conteiner-1{
+        margin-left: -20rem;
+        /* display: none; */
+    }
+    .AboutmeImage{
+        /* position:absolute; */
+        width: 20rem;
+        height: 20rem;
+        margin-top:-10rem;
+        margin-left: 6rem;
+        /* bottom: 0; */
+        /* top: 0; */
+    }
+    #ImagesConteiner{
+        /* position: absolute; */
+        margin-bottom: -30rem;
+    }
+    .AboutmeConteiner  .CVDownloader{
+        margin-top:40vh;
+        margin-left: 104%;
+    } 
+}
+@media screen and (max-width: 650px) {
+    .Title{
+        margin-top: 0rem;
+    }
+    .Title h1{
+        font-size: 2rem;
+    }
+    .AboutmeConteiner .AboutmeImage{
+        width: 13rem;
+        height: 14rem;
+        margin-top: 4.64rem;
+        /* bottom: 0; */
+        margin-left: 3.5rem;
+    }
+    .AboutmeConteiner .Conteiner-1 .AboutText{
+        margin-top: -30vh;
+        font-size: .95rem;
+        margin-left: 70%;
+        text-align: center;
+    }
+    .AboutmeConteiner .AboutStatistic{
+        margin-left: 75%;
+        margin-top: -13vh;
+    }
+    .AboutmeConteiner  .CVDownloader{
+        margin-top:25vh;
+        margin-left: 110%;
+    }
+}
+@media screen and (max-width: 580px) {
+    .AboutmeConteiner .Conteiner-1 .AboutText{
+        width: 70%;
+        margin-left: 74%;
+    }
+}
+@media screen and (max-width: 530px) {
+    .AboutmeConteiner .Conteiner-1 .AboutText{
+        width: 60%;
+        margin-left: 86%;
+        font-size: .85rem;
+    }
+    .AboutmeConteiner .AboutStatistic{
+        margin-left:  93%;
+    }
+    
+    .AboutmeConteiner .AboutStatistic ul li h1{
+        margin-left: .7rem;
+        font-size: 1rem;
+    }
+    .AboutmeConteiner .AboutStatistic ul li p{
+        font-size: .75rem;
+    }
+    .AboutmeConteiner .AboutStatistic ul li{
+        margin-right: 2.5rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .AboutmeConteiner .Conteiner-1 .AboutText{
+        width: 16rem;
+        margin-left: 95%;
+    }   
+    .AboutmeConteiner .AboutmeImage{
+        visibility:hidden;
+    }
+}
+@media screen and (max-width: 395px) {
+    .AboutmeConteiner .Conteiner-1 .AboutText{
+         margin-left: 95%;
+     }
+     .AboutmeConteiner  .CVDownloader{
+        margin-left: 120%;
+    }     
+}  
+@media screen and (max-width: 360px) {
+    .AboutmeConteiner .Conteiner-1 .AboutText{
+         margin-left: 102%;
+     }
+     .AboutmeConteiner .AboutStatistic{
+        margin-left: 100%;
+    }
+    .AboutmeConteiner  .CVDownloader{
+        margin-left: 130%;
+    }  
+}  
+@media screen and (max-width: 330px) {
+    .AboutmeConteiner .Conteiner-1 .AboutText{
+        width: 15rem;
+         margin-left: 113%;
+     }
+     .AboutmeConteiner .AboutStatistic{
+        margin-left: 105%;
+    }
+    .AboutmeConteiner  .CVDownloader{
+        margin-top: 30vh;
+        margin-left: 142%;
+    }  
+}  
+@media screen and (max-width: 310px) {
+    .AboutmeConteiner .Conteiner-1 .AboutText{
+        width: 14rem;
+         margin-left: 130%;
+     }
+     .AboutmeConteiner .AboutStatistic{
+         display: none;
+     }
+     .AboutmeConteiner  .CVDownloader{
+        margin-top: 10vh;
+        margin-left: 143%;
+    }  
+    @media screen and (max-height: 480px) {
+        .AboutmeConteiner .Conteiner-1 .AboutText{
+            width: 14rem;
+            margin-top: -8rem;
+             margin-left: 135%;
+         }
+    }
+    @media screen and (max-height: 450px) {
+        .AboutmeConteiner .Conteiner-1 .AboutText{
+            width: 14rem;
+            margin-top: -7rem;
+             margin-left: 135%;
+         }
+    }
+    @media screen and (max-height: 400px) {
+        .AboutmeConteiner .Conteiner-1 .AboutText{
+            width: 14rem;
+            margin-top: -6rem;
+             margin-left: 135%;
+         }
+        .AboutmeConteiner  .CVDownloader{
+            position: absolute;
+            margin-top: 3rem !important;
+            margin-left: 143%;
+        }  
+    }
+}  
+
+@media screen and (max-width: 260px) {
+    .AboutmeConteiner .Conteiner-1 .AboutText{
+        width: 14rem;
+         margin-left: 135%;
+     }
+    .AboutmeConteiner  .CVDownloader{
+        margin-top: 10vh;
+        margin-left: 148%;
+    }
+}
+@media screen and (max-width: 245px) {
+    .AboutmeConteiner  .CVDownloader{
+        margin-top: 10vh;
+        margin-left: 150%;
+    }
+}
+@media screen and (max-width: 236px) {
+    .AboutmeConteiner .Conteiner-1 .AboutText{
+        width: 11rem;
+        margin-left: 155%;
+    }
+}

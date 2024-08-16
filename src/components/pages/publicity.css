@@ -1,0 +1,132 @@
+.Publicity{
+    position:absolute;
+    width: 100%;
+    margin-top: 70rem;
+    margin-bottom: 0;
+    background-color: var(--dark-background);
+}
+.GetInTouch{
+    margin-top: 37rem;
+    background-color: var(--dark-background);
+}
+
+.Publicity div{
+    /* position: absolute; */
+    width: 100%;
+    height: 40rem;
+    background-color: var(--dark-background);
+    /* background-color: aqua; */
+}
+.Publicity div div{
+    position: relative;
+    text-align: left;
+    width: 50rem;
+    height: 20rem;
+    /* margin-left: 15%; */
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 2rem; */
+    border-radius: 20px;
+    background-color: var(--conteiner-color);
+    color: var(--default-color-text);
+    box-shadow: 4px 4px 20px var(--shadow-color);
+}
+
+.Publicity div div img{
+    float: right;
+    margin-top: -10rem;
+    width: 409px;
+    height: 610px;
+}
+.Publicity div div h1{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-size: 1.75rem;
+    color: var(--default-color-text);
+}
+.Publicity div div h2{
+    width: 30rem;
+    font-size: 1rem;
+    margin-left: 2rem;
+    color: var(--color-text-1);
+}
+.Publicity .Button {
+    text-align: left;
+    width: 8rem;
+    height: 3rem;
+    padding-left: .75rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-size: .85rem;
+    background-color: var(--primary-button-color);
+    color: var(--default-color-text);
+    border: 1px solid transparent;
+    box-shadow: -4px 4px 10px var(--default-shadow-color);
+    cursor: pointer;
+}
+
+.Publicity .Button .ForwardIcon-1{
+    position: absolute;
+    margin-top: .1rem;
+    margin-left: .5rem;
+    transition: transform 0.5s ease;
+    color: var(--default-color-text);
+}
+.Publicity .Button:hover {
+    color: var(--object-secundary-color);
+    border: 1px solid var(--object-secundary-color);
+}
+.Publicity .Button:hover .ForwardIcon-1{ 
+    transform: translateX(10px);
+    color: var(--default-color-text);
+}
+
+@media screen and (max-width: 877px ) {
+    .Publicity div{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .Publicity div div{
+        height: 30rem;
+    }
+    .Publicity div div img{
+        margin-top: -1rem;
+    }
+}
+@media screen and (max-width: 822px ) {
+    .Publicity{
+        margin-top: 100rem;
+    }
+    .GetInTouch{
+        margin-top: 95rem;
+    }
+    .Publicity div div{
+        width: 100%;
+        /* height: 300px; */
+        border-radius: 0px;
+    }
+}
+@media screen and (max-width: 694px ) {
+    .Publicity div div img{
+        width: 18rem;
+        height: 20rem;
+        margin-top: 4rem;
+    }
+    .GetInTouch{
+        margin-top: 120rem;
+    }
+}
+@media screen and (max-width: 448px ) {
+    .Publicity div div h1{
+        font-size: 1.2rem;
+    }
+    .Publicity div div h2{
+        width: 80%;
+        font-size: .86rem;
+    }
+    .Publicity div div img{
+        margin-top: 0rem;
+    }
+}
